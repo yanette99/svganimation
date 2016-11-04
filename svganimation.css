@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Itim');
+
+p {
+  font-family: 'Itim', cursive;
+}
+
 body {
   background-color: white;
 }

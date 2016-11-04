@@ -19,28 +19,133 @@
         <circle cx="50" cy="320" r="30" fill="white"/>
         <circle cx="50" cy="275" r="20" fill="white"/>
         <!--  Snowman hat  -->
-        <rect x="23" y="250" width="55" height="10"/>
-        <rect x="35" y="227" width="30" height="24"/>
+        <rect x="23" y="250" width="55" height="10">
+            <animate id="hat" attributeName="opacity" from="1" to="1" dur=".001" fill="freeze" begin="click"/>
+            <animate id="hatt" attributeName="opacity" from="1" to="0" dur="2" fill="freeze" begin="hat.end"/>
+        </rect>
+        <rect x="35" y="227" width="30" height="24">
+            <animate attributeName="opacity" from="1" to="0" dur="2" fill="freeze" begin="hat.end"/>
+        </rect>
         <!--  Snowman eyes  -->
         <circle cx="55" cy="270" r="3"/>
         <circle cx="41" cy="270" r="3"/>
         <!--  Snowman nose  -->
      <polygon points="43,280 60,285 43,290" fill="orange"/>
 //clouds
+      <!--first clouds-->
+      <circle cx="40" cy="50" r="15" fill="white">
+        <animate id="cloud5" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+    </circle>
+      <circle cx="65" cy="50" r="15" fill="white">
+        <animate id="cloud4" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+    </circle>
+      <circle cx="30" cy="70" r="18" fill="white">
+        <animate id="cloud3" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+    </circle>
+      <circle cx="50" cy="70" r="18" fill="white">
+        <animate id="cloud2" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+    </circle>
+      <circle cx="74" cy="70" r="18" fill="white">
+          <animate id="cloud1" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+      </circle>
+
+
+
+      <circle cx="240" cy="50" r="15" fill="white">
+        <animate id="cloud10" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+    </circle>
+      <circle cx="265" cy="50" r="15" fill="white">
+        <animate id="cloud9" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+    </circle>
+      <circle cx="230" cy="70" r="18" fill="white">
+        <animate id="cloud8" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+    </circle>
+      <circle cx="250" cy="70" r="18" fill="white">
+        <animate id="cloud7" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+    </circle>
+      <circle cx="274" cy="70" r="18" fill="white">
+          <animate id="cloud6" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+      </circle>
+
+
+
+      <circle cx="440" cy="50" r="15" fill="white">
+        <animate id="cloud15" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+    </circle>
+      <circle cx="465" cy="50" r="15" fill="white">
+        <animate id="cloud14" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+    </circle>
+      <circle cx="430" cy="70" r="18" fill="white">
+        <animate id="cloud13" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+    </circle>
+      <circle cx="450" cy="70" r="18" fill="white">
+        <animate id="cloud12" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+    </circle>
+      <circle cx="474" cy="70" r="18" fill="white">
+          <animate id="cloud11" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+      </circle>
+
+
+
+      <circle cx="640" cy="50" r="15" fill="white">
+        <animate id="cloud20" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+    </circle>
+      <circle cx="665" cy="50" r="15" fill="white">
+        <animate id="cloud19" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+    </circle>
+      <circle cx="630" cy="70" r="18" fill="white">
+        <animate id="cloud18" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+    </circle>
+      <circle cx="650" cy="70" r="18" fill="white">
+        <animate id="cloud17" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+    </circle>
+      <circle cx="674" cy="70" r="18" fill="white">
+          <animate id="cloud16" attributeName="opacity" from="1" to="1" dur=".0001"  begin="click">
+      </circle>
 
 
 //snow
-    <circle cx="10" cy="3" r="3" fill="white">
-          <animate attributeName="cy" from="3" to="50" dur="5s" fill="freeze" begin="click"/></circle>
-    <circle cx="50" cy="3" r="3" fill="white">
-          <animate attributeName="cy" from="3" to="50" dur="5s" fill="freeze" begin="click"/></circle>
-    <circle cx="80" cy="3" r="3" fill="white">
-        <animate attributeName="cy" from="3" to="50" dur="5s" fill="freeze" begin="click"/></circle>
-    <circle cx="140" cy="3" r="3" fill="white">
-            <animate attributeName="cy" from="3" to="50" dur="5s" fill="freeze" begin="click"/></circle>
+    <circle cx="50" cy="50" r="5" fill="white">
+          <animate attributeName="cy" from="50" to="400" dur="7s" fill="freeze" begin="cloud1.end;cloud2.end;cloud3.end;cloud4.end;cloud5.end"/></circle>
+    <circle cx="40" cy="50" r="5" fill="white">
+          <animate attributeName="cy" from="50" to="400" dur="5s" fill="freeze" begin="cloud1.end;cloud2.end;cloud3.end;cloud4.end;cloud5.end"/></circle>
+    <circle cx="60" cy="50" r="5" fill="white">
+        <animate attributeName="cy" from="50" to="400" dur="6s" fill="freeze" begin="cloud1.end;cloud2.end;cloud3.end;cloud4.end;cloud5.end"/></circle>
+    <circle cx="80" cy="60" r="5" fill="white">
+            <animate attributeName="cy" from="60" to="400" dur="5s" fill="freeze" begin="cloud1.end;cloud2.end;cloud3.end;cloud4.end;cloud5.end"/></circle>
+
+
+    <circle cx="250" cy="50" r="5" fill="white">
+          <animate attributeName="cy" from="50" to="400" dur="7s" fill="freeze" begin="cloud6.end;cloud7.end;cloud8.end;cloud9.end;cloud10.end"/></circle>
+    <circle cx="240" cy="50" r="5" fill="white">
+          <animate attributeName="cy" from="50" to="400" dur="5s" fill="freeze" begin="cloud6.end;cloud7.end;cloud8.end;cloud9.end;cloud10.end"/></circle>
+   <circle cx="260" cy="50" r="5" fill="white">
+          <animate attributeName="cy" from="50" to="400" dur="6s" fill="freeze" begin="cloud6.end;cloud7.end;cloud8.end;cloud9.end;cloud10.end"/></circle>
+    <circle cx="280" cy="60" r="5" fill="white">
+          <animate attributeName="cy" from="60" to="400" dur="5s" fill="freeze" begin="cloud6.end;cloud7.end;cloud8.end;cloud9.end;cloud10.end"/></circle>
+
+    <circle cx="450" cy="50" r="5" fill="white">
+          <animate attributeName="cy" from="50" to="400" dur="7s" fill="freeze" begin="cloud11.end;cloud12.end;cloud13.end;cloud14.end;cloud15.end"/></circle>
+    <circle cx="440" cy="50" r="5" fill="white">
+          <animate attributeName="cy" from="50" to="400" dur="5s" fill="freeze" begin="cloud11.end;cloud12.end;cloud13.end;cloud14.end;cloud15.end"/></circle>
+    <circle cx="460" cy="50" r="5" fill="white">
+          <animate attributeName="cy" from="50" to="400" dur="6s" fill="freeze" begin="cloud11.end;cloud12.end;cloud13.end;cloud14.end;cloud15.end"/></circle>
+    <circle cx="480" cy="60" r="5" fill="white">
+          <animate attributeName="cy" from="60" to="400" dur="5s" fill="freeze" begin="cloud11.end;cloud12.end;cloud13.end;cloud14.end;cloud15.end"/></circle>
+
+    <circle cx="650" cy="50" r="5" fill="white">
+          <animate attributeName="cy" from="50" to="400" dur="7s" fill="freeze" begin="cloud16.end;cloud17.end;cloud18.end;cloud19.end;cloud20.end"/></circle>
+    <circle cx="640" cy="50" r="5" fill="white">
+          <animate attributeName="cy" from="50" to="400" dur="5s" fill="freeze" begin="cloud16.end;cloud17.end;cloud18.end;cloud19.end;cloud20.end"/></circle>
+    <circle cx="660" cy="50" r="5" fill="white">
+          <animate attributeName="cy" from="50" to="400" dur="6s" fill="freeze" begin="cloud16.end;cloud17.end;cloud18.end;cloud19.end;cloud20.end"/></circle>
+  <circle cx="680" cy="60" r="5" fill="white">
+          <animate attributeName="cy" from="60" to="400" dur="5s" fill="freeze" begin="cloud16.end;cloud17.end;cloud18.end;cloud19.end;cloud20.end"/></circle>
+
+
+
 
    </svg>
+   <p>It is winter and I have a sunset going down. If you click on any of the clouds you snow is going to fall down.</p>
       </body>
     </html>
-
-    snhdvcjvdcj
